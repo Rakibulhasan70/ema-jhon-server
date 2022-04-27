@@ -58,6 +58,11 @@ run().catch(console.dir);
 app.get('/', (req, res) => {
     res.send('jhon is running and waiting for ema')
 });
+
+app.get('/hero', (req, res) => {
+    res.send('only hero is real')
+});
+
 app.listen(port, () => {
     console.log('jhon is runnig on port', port);
 })
